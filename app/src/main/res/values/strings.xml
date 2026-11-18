@@ -7,7 +7,7 @@
       removed - see docs/ISSUE_LOG.md issues #19/#35. UI text that is still hard-coded in
       Kotlin/XML needs to be extracted here before any real localization work.
     -->
-    <string name="app_name">Gothwad Launcher</string>
+    <string name="app_name">Bansify Launcher</string>
 
     <!-- Common -->
     <string name="done">Done</string>
@@ -17,33 +17,33 @@
     <!-- Status bar -->
     <string name="cd_network">Network</string>
     <string name="cd_settings">Settings</string>
-    <string name="safe_mode_active">Gothwad Launcher restarted repeatedly — self-healing paused</string>
+    <string name="safe_mode_active">Bansify Launcher restarted repeatedly — self-healing paused</string>
     <string name="toast_cannot_open">Could not open app</string>
     <string name="toast_no_launchable">App has no launchable screen</string>
     <string name="toast_no_store">App store not available — install the app manually</string>
     <!-- Settings: display -->
     <!-- Settings: status bar -->
     <!-- Setup wizard -->
-    <string name="wizard_welcome_title">Welcome to Gothwad Launcher</string>
+    <string name="wizard_welcome_title">Welcome to Bansify Launcher</string>
     <string name="wizard_welcome_body">A lightweight, one-screen launcher: your apps grouped by section, your own wallpaper, and a clean status row with clock, network and VPN.</string>
-    <string name="wizard_privacy_body">Privacy note — nothing to grant: Gothwad Launcher requests no location, no microphone, and runs no background services. Everything it needs was granted at install.</string>
+    <string name="wizard_privacy_body">Privacy note — nothing to grant: Bansify Launcher requests no location, no microphone, and runs no background services. Everything it needs was granted at install.</string>
     <string name="wizard_home_title">Set as your home screen</string>
-    <string name="wizard_already_default">✓ Done — Gothwad Launcher is already your default launcher on this device.</string>
+    <string name="wizard_already_default">✓ Done — Bansify Launcher is already your default launcher on this device.</string>
     <string name="wizard_check_again">Check again</string>
-    <string name="wizard_aosp_body">This device allows choosing a home app. Press the button below, pick Gothwad Launcher in the system dialog and confirm (choose "Always" if asked).</string>
+    <string name="wizard_aosp_body">This device allows choosing a home app. Press the button below, pick Bansify Launcher in the system dialog and confirm (choose "Always" if asked).</string>
     <string name="wizard_set_default">Set as default launcher</string>
-    <string name="wizard_no_dialog_hint">If no dialog appears: Android settings &gt; Apps &gt; Default apps &gt; Home app &gt; Gothwad Launcher. Or simply press the Home button — Android will ask which launcher to use.</string>
+    <string name="wizard_no_dialog_hint">If no dialog appears: Android settings &gt; Apps &gt; Default apps &gt; Home app &gt; Bansify Launcher. Or simply press the Home button — Android will ask which launcher to use.</string>
     <string name="wizard_no_chooser">This device has no home chooser — use the ADB method shown</string>
 
     <!-- Accessibility Service & Home button -->
-    <string name="accessibility_service_label">Gothwad Launcher Home Service</string>
-    <string name="accessibility_service_desc">Allows Gothwad Launcher to intercept the remote Home button and stay active on Android TV and Google TV devices.</string>
+    <string name="accessibility_service_label">Bansify Launcher Home Service</string>
+    <string name="accessibility_service_desc">Allows Bansify Launcher to intercept the remote Home button and stay active on Android TV and Google TV devices.</string>
     <string name="accessibility_enable_btn">Open Accessibility Settings</string>
-    <string name="accessibility_status_enabled">✓ Active: Home button mapped to Gothwad Launcher</string>
+    <string name="accessibility_status_enabled">✓ Active: Home button mapped to Bansify Launcher</string>
 
     <!-- Notifications & Shade -->
     <string name="cd_notifications">Notifications</string>
-    <string name="notification_service_label">Gothwad Launcher Notifications</string>
+    <string name="notification_service_label">Bansify Launcher Notifications</string>
     <string name="notifications_title">Notifications</string>
 
     <!-- Header Left Card & Permission Features -->
