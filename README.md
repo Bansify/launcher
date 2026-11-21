@@ -1,4 +1,4 @@
-# Gothwad Launcher
+# Bansify Launcher
 
 <p align="center">
   <b>A high-performance, lightweight launcher tailored for Android TV.</b>
@@ -17,7 +17,7 @@
 
 ## 🌟 Overview
 
-**Gothwad Launcher** is an ultra-fast, modern Android launcher designed from the ground up for TV screens (10-foot experience). Built with **Native Android Views, ViewBinding, and RecyclerView**, it delivers zero-lag navigation, rich visual aesthetics, and extensive customization without bloat.
+**Bansify Launcher** is an ultra-fast, modern Android launcher designed from the ground up for TV screens (10-foot experience). Built with **Native Android Views, ViewBinding, and RecyclerView**, it delivers zero-lag navigation, rich visual aesthetics, and extensive customization without bloat.
 
 ---
 

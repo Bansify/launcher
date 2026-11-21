@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "GothwadLauncher"
+rootProject.name = "BansifyLauncher"
 include(":app")

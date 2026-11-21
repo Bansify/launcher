@@ -90,8 +90,8 @@ jobs:
           AAB=$(find app/build/outputs/bundle/release/ -name "*.aab" | head -n 1)
 
           if [ -n "$DEBUG_APK" ]; then
-            cp "$DEBUG_APK" release_out/GothwadLauncher-v${V_NAME}-Debug.apk
-            echo "Copied Debug APK: release_out/GothwadLauncher-v${V_NAME}-Debug.apk"
+            cp "$DEBUG_APK" release_out/BansifyLauncher-v${V_NAME}-Debug.apk
+            echo "Copied Debug APK: release_out/BansifyLauncher-v${V_NAME}-Debug.apk"
           fi
 
           if [ -z "$KEYSTORE_BASE64" ]; then
@@ -138,19 +138,19 @@ jobs:
               --ks-key-alias "$ACTUAL_ALIAS" \
               --ks-pass "pass:$KEYSTORE_PASS" \
               --key-pass "pass:$KEY_PASS" \
-              --out release_out/GothwadLauncher-v${V_NAME}-Release.apk \
+              --out release_out/BansifyLauncher-v${V_NAME}-Release.apk \
               "$UNALIGNED_TEMP"
 
-            $APKSIGNER verify --verbose release_out/GothwadLauncher-v${V_NAME}-Release.apk
+            $APKSIGNER verify --verbose release_out/BansifyLauncher-v${V_NAME}-Release.apk
             rm -f "$UNALIGNED_TEMP"
           fi
 
           if [ -n "$AAB" ]; then
-            cp "$AAB" release_out/GothwadLauncher-v${V_NAME}-PlayStore.aab
+            cp "$AAB" release_out/BansifyLauncher-v${V_NAME}-PlayStore.aab
             jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
               -keystore "$KS_PATH" \
               -storepass "$KEYSTORE_PASS" -keypass "$KEY_PASS" \
-              release_out/GothwadLauncher-v${V_NAME}-PlayStore.aab \
+              release_out/BansifyLauncher-v${V_NAME}-PlayStore.aab \
               "$ACTUAL_ALIAS"
             echo "Successfully signed Play Store AAB!"
           fi
@@ -162,7 +162,7 @@ jobs:
       - name: Upload Release Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Gothwad-Launcher-v${{ steps.versioning.outputs.v_name }}-Release
+          name: Bansify-Launcher-v${{ steps.versioning.outputs.v_name }}-Release
           path: release_out/
 
       - name: Create GitHub Release
@@ -176,6 +176,6 @@ jobs:
           prerelease: false
           generate_release_notes: true
           files: |
-            release_out/GothwadLauncher-v${{ steps.versioning.outputs.v_name }}-Release.apk
-            release_out/GothwadLauncher-v${{ steps.versioning.outputs.v_name }}-Debug.apk
-            release_out/GothwadLauncher-v${{ steps.versioning.outputs.v_name }}-PlayStore.aab
+            release_out/BansifyLauncher-v${{ steps.versioning.outputs.v_name }}-Release.apk
+            release_out/BansifyLauncher-v${{ steps.versioning.outputs.v_name }}-Debug.apk
+            release_out/BansifyLauncher-v${{ steps.versioning.outputs.v_name }}-PlayStore.aab
